@@ -1,4 +1,39 @@
-# Web Security Injections and Issues
+# Trevor (SQL Injection)
+
+For the first week of the project, Trevor spent time using Google to 
+understand what an SQL injection is, and how to perform one.  An SQL
+injection is a web-based attack wherein the attacker might gain access
+to a system by using SQL syntax in a form text entry field.  
+
+In a Login form, the backend program might utilize code that takes the
+user's entry and stores it in a variable called userIDEntry.  Then, the
+JavaScript code would look like this code from 
+https://www.w3schools.com/sql/sql_injection.asp:
+
+``` JavaScript
+txtUserId = getRequestString("UserId");
+txtSQL = "SELECT * FROM Users WHERE UserId = " + txtUserId;
+```
+
+To view information about the system, the attacker might provide the
+entry:
+
+```
+105 OR 1 = 1
+```
+
+The resultant SQL entry would then be
+
+```
+SELECT * FROM Users WHERE UserId = 105 OR 1 = 1;
+```
+
+This would return the Users table for the attacker to see.  If the
+Users table also contains passwords, then the attacker has attained
+a complete list of usernames and passwords for the site.  Similar code
+can also be used to gain unauthorized access to a system.
+
+# Evan (XSS in Javascript)
 
 ## Cross-Site Scripting 
 XSS is a class of attacks that involve injecting client side scripts through the website which then renders to other users. 
@@ -53,3 +88,13 @@ Never put untrusted data in CSS
 ``` html
 <style> NOTHING IN HERE </style>
 ```
+
+# Max 
+In the first week I decided to look up how to alter the clipboard on a windows machine from an application that was always running. 
+SetClipboardData is an API that allows the user to alter the clipboard. Currently, this is my number one idea on how to do this. I would run
+a process in the background, constantly searching if a particular input from the clipboard had happened yet.
+Being an APT(advanced persistent threat), I was curious how we could get this on the person's computer. So, I have been messing around with 
+downloading Microsoft Word files from the internet, then having them execute a command to open powershell. From there, someone could 
+easily run a command to run the malware to change the application. 
+
+So far, this has been a very fun project, I am looking forward to fully implementing this!
