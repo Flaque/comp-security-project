@@ -1,6 +1,9 @@
 This is a Computer Security Final Project in Yangping Zhang's CPSC 448 class. 
+
 Trevor Greenside: SQL Injections
+
 Evan Conrad: Javascript Injections
+
 Maxwell Dulin: Clipboard Injections
 
 Both Evan and Trevor are making websites to test this out on. 
