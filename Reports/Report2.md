@@ -12,6 +12,10 @@ Hacks<script>alert("XSS!");</script>
 ```
 
 # Max 
+I was able to find a viable way of changing the clipboard using python, by using a module "win32clipboard". After, I built a script that is capable of, assuming that the user has python installed, of constantly checking their clipboard. If the clipboard has the value that the user wants at the time that the program is run, then it changes the clipboard to whatever the hacker wants. In this current situation, the python program just runs for ever.
+
+To make this more realisitc I found need to find a way to run the script in something that the computer would pop up a window to run (such as a shell file) but also need something that doesn't need any downloads, packages to install or software to install, which is what is currently happens. I could potentially make this into an executable. But, this issue will take some further research to fully understand a way around it. The code for this is in the repository under Clipboard Injection. 
+
 
 # Trevor
 
