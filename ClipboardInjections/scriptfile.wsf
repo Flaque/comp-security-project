@@ -1,0 +1,21 @@
+<?XML Version="1.0" encoding="ISO-8859-1"?>
+<?job error="true" debug="false"?>
+<package>
+        <job>
+        <script language="VBScript">
+        <![CDATA[
+public sub vbsOutput(strText)
+        wscript.echo strText & " (from vbsOutput)"
+end sub
+        ]]>
+        </script>
+
+        <script language="Python">
+        <![CDATA[
+import sys
+globals.vbsOutput('python test')
+        ]]>
+        </script>
+
+        </job>
+</package>

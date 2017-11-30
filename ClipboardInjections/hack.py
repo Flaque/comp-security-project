@@ -39,7 +39,6 @@ class malware:
 			Clip.CloseClipboard()
 			return 1 #if successful
 		return 0 #if failure
-		11
 		
 def main():
 	#clears the keyboard
