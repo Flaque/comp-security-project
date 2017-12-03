@@ -1,0 +1,9 @@
+# Trevor
+
+I have successfully tested a basic Node app to be vulnerable to SQL injections.  In addition, I have looked into various methods of preventing SQL injections.  Among these is a setting in NodeJS that allows multiple SQL queries to be sent over a connection to the database, which is disabled by default.  Thus, entering into the username field 'Trevor"; INSERT INTO Users VALUES (...)' will result in an error.  However, this leaves the vulnerability to gaining authentication with the line 'Trevor" OR 1=1'.  This can be dealt with via a string parser, or with a carefully designed authentication algorithm in the back end of the application.
+
+Some SQL injections that will be demonstrated with this basic app include authenticating with a valid password but no valid username, altering a database, and removing tables created specifically for this demonstration.  
+
+In addition to testing, I conducted research on when the SQL injection attack has been used before.  According to an article by Sean Michael Kerner (https://www.esecurityplanet.com/network-security/how-was-sql-injection-discovered.html), Jeff Foristal wrote the first public discussion of SQL injections in 1998.  At the time, he was writing on how to hack Windows NT servers.  To this day, SQL injections are among the most common attacks.  
+
+As recently as early October 2017, researcher Anthony Ferrara discovered a bug in WordPress that allowed an for website takeover (http://www.thewhir.com/web-hosting-news/wordpress-issues-emergency-patch-for-sql-injection-vulnerability).  According to another article by Thomas Fox-Brewster at Forbes, SQL injections were used for the cyberattacks that led to the leak of Game of Thrones episodes (https://www.forbes.com/sites/thomasbrewster/2017/11/21/basic-hacker-or-elite-cyber-spy-feds-say-this-iranian-tried-to-extort-hbo-for-6bn/#1d39affd2255).
