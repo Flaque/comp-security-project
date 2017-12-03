@@ -8,7 +8,7 @@ In addition to testing, I conducted research on when the SQL injection attack ha
 
 As recently as early October 2017, researcher Anthony Ferrara discovered a bug in WordPress that allowed an for website takeover (http://www.thewhir.com/web-hosting-news/wordpress-issues-emergency-patch-for-sql-injection-vulnerability).  According to another article by Thomas Fox-Brewster at Forbes, SQL injections were used for the cyberattacks that led to the leak of Game of Thrones episodes (https://www.forbes.com/sites/thomasbrewster/2017/11/21/basic-hacker-or-elite-cyber-spy-feds-say-this-iranian-tried-to-extort-hbo-for-6bn/#1d39affd2255).
 
-#Max
+# Max
 
 This project has proven to be quite complicated to make secret...There are so many ways to push back hackers, but also so many vulnerbilities. After creating a python script to change the clipboard, I was able to convert this into an executable. Which seemed all fine and dandy until the executable could only be ran inside of the folder with all of its dependentcies. 
 
